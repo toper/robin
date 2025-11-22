@@ -89,9 +89,9 @@ _llm_config_map = {
         'class': ChatOllama,
         'constructor_params': {'model': 'llama3.1:latest', 'base_url': OLLAMA_BASE_URL}
     },
-    'gemma3': { 
+    'huihui-qwen3-vl-8b-instruct-abliterated': { 
         'class': ChatOllama,
-        'constructor_params': {'model': 'gemma3:latest', 'base_url': OLLAMA_BASE_URL}
+        'constructor_params': {'model': 'huihui-qwen3-vl-8b-instruct-abliterated:latest', 'base_url': OLLAMA_BASE_URL}
     },
     'deepseek-r1': { 
         'class': ChatOllama,
