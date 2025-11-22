@@ -21,10 +21,10 @@ def robin():
 @click.option(
     "--model",
     "-m",
-    default="gpt-5-mini",
+    default="huihui-qwen3-vl-8b-instruct-abliterated",
     show_default=True,
     type=click.Choice(MODEL_CHOICES),
-    help="Select LLM model to use (e.g., gpt4o, claude sonnet 3.5, ollama models)",
+    help="Select LLM model to use (e.g., gpt4o, claude sonnet, LM Studio models)",
 )
 @click.option("--query", "-q", required=True, type=str, help="Dark web search query")
 @click.option(
