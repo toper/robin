@@ -130,7 +130,7 @@ def fetch_ollama_models() -> List[str]:
         return []
 
     try:
-        resp = requests.get(urljoin(base_url, "api/tags"), timeout=3)
+        resp = requests.get(urljoin(base_url, "v1/models"), timeout=3)
         resp.raise_for_status()
         models = resp.json().get("models", [])
         available = []
